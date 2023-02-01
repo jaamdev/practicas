@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Login Panel - LexterXPS</title>
+</head>
+
+<body>
+    <!-- <h1><a href="https://youtu.be/JALGkIUgVrM" target="_blank">Ver vídeo.</h1> -->
+    <section>
+        <div class="contenedor">
+            <div class="contenedor_contenido">
+                <div class="contenedor_formulario">
+                    <h2>Iniciar Sesión</h2>
+                    <form id="form_login">
+                        <div class="input">
+                            <span>Usuario:</span>
+                            <input type="text" name="" id="" class="usuario" required>
+                        </div>
+                        <div class="input">
+                            <span>Contraseña:</span>
+                            <input type="password" name="" id="" class="contrasenia">
+                        </div>
+                        <div class="input">
+                            <button type="submit">
+                                <div class="loader" id="loader"></div>
+                                <span class="titulo_boton">Ingresar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="contenedor_img">
+                <img src="bg.jpg" alt="">
+            </div>
+            <div class="contenedor_error">
+                <p>¡Ups! Las credenciales no son correctas. Inténtalo de nuevo.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

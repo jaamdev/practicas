@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Menú desplegable responsive - J&G Proyectos Web</title>
+</head>
+<body>
+    <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"></i> Menú</span>
+    <nav class="main-nav">
+        <ul class="menu" id="menu">
+            <li class="menu__item"><a href="https://youtu.be/ZhiSV-zPBzI" target="_blank" class="menu__link">Ver Vídeo</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Nosotros</a></li>
+            <li class="menu__item container-submenu">
+                <a href="#" class="menu__link submenu-btn">Productos <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li class="menu__item"><a href="#" class="menu__link">Televisores</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Computadoras</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Videojuegos</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Smartphones</a></li>
+                </ul>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Galería</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+        </ul>
+    </nav>
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #7275a4, #4a4872, #802d4a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-table {
+  display: flex;
+  width: 800px;
+  height: 450px;
+}
+.pricing-table .individual, .pricing-table .shared, .pricing-table .unlimited {
+  flex: 1;
+  height: 100%;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 12px;
+}
+.pricing-table .individual h2, .pricing-table .shared h2, .pricing-table .unlimited h2 {
+  text-align: center;
+  position: relative;
+}
+.pricing-table .individual h2::after, .pricing-table .shared h2::after, .pricing-table .unlimited h2::after {
+  width: 20px;
+  height: 3px;
+  background-color: #f0f0f0;
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pricing-table .individual .price, .pricing-table .shared .price, .pricing-table .unlimited .price {
+  position: absolute;
+  color: rgba(209, 209, 209, 0.12);
+  width: 100%;
+  font-size: 350px;
+  top: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+.pricing-table .individual .price span, .pricing-table .shared .price span, .pricing-table .unlimited .price span {
+  font-size: 50px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+}
+.pricing-table .individual {
+  background: linear-gradient(135deg, #5464bf, #6a99ca, #6eb0be);
+}
+.pricing-table .shared {
+  background: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6);
+  transform: scale(1.15);
+  z-index: 10;
+  box-shadow: 0 0 24px 10px rgba(15, 15, 15, 0.4);
+}
+.pricing-table .shared .continue {
+  position: relative;
+  top: 45px;
+  z-index: 12;
+}
+.pricing-table .shared .waves {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  border-radius: 12px;
+  width: 100%;
+  height: 176px;
+  background-image: url(img/waves.png);
+  background-size: cover;
+}
+.pricing-table .unlimited {
+  background: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+}
+.pricing-table .unlimited .lines {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(img/lines.png);
+  background-size: cover;
+}
+.pricing-table .feature {
+  width: 80%;
+  margin: 0 auto;
+}
+.pricing-table .feature h3 {
+  color: rgba(209, 209, 209, 0.7);
+  font-weight: 400;
+}
+.pricing-table .feature h3 span {
+  color: #f0f0f0;
+  font-weight: 700;
+}
+.pricing-table .feature .progress {
+  background-color: rgba(15, 15, 15, 0.3);
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 8px 16px 6px rgba(15, 15, 15, 0.2);
+}
+.pricing-table .feature .progress.office::after {
+  border-radius: 15px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6);
+  height: 100%;
+  width: 80%;
+}
+.pricing-table .feature .progress.home::after {
+  border-radius: 15px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+  height: 100%;
+  width: 50%;
+}
+.pricing-table .large-feature {
+  text-align: center;
+}
+.pricing-table .large-feature p {
+  margin: 0;
+}
+.pricing-table .large-feature h3 {
+  padding: 20px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+.pricing-table .continue {
+  display: flex;
+  justify-content: center;
+}
+.pricing-table .continue button {
+  width: 80%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  color: #a09e9e;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 12px 3px rgba(15, 15, 15, 0.2);
+}
+.pricing-table .continue button img {
+  height: 12px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

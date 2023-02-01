@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js" type="text/javascript" defer></script>
+    <title>Lista de tareas - Programación Accesible</title>
+</head>
+<body>
+    <h1><a href="https://youtu.be/URk526D9mls" target="_blank">Ver Vídeo</a></h1>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div id="dateMonth"></div>
+                <div id="dateYear"></div>
+            </div>
+        </div>
+        <div id="dateText"></div>
+    </div>
+    <form onsubmit="addNewTask(event)">
+        <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea">
+        <button type="submit" class="addTaskButton">+</button>
+        <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+    </form>
+    <div id="tasksContainer"></div>
+</body>
+</html>

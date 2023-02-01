@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Clima en tu lugar - Programación Accesible</title>
+</head>
+<body onload="onLoad()">
+    <h1 class="video"><a href="https://youtu.be/yT_wBSQ9EIs" target="_blank">Ver vídeo.</a></h1>
+    <div id="container">
+        <div class="block">
+            <div id="location"></div>
+            <div id="date"></div>
+            <div id="description"></div>
+        </div>
+        <div class="block">
+            <div class="information-container">
+                Temperatura:
+                <div class="info" id="temperature"></div>
+            </div>
+            <div class="information-container">
+                Presión:
+                <div class="info" id="humidity"></div>
+            </div>
+            <div class="information-container">
+                Humedad:
+                <div class="info" id="pressure"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader" class="loader">Cargando...</div>
+    <script src="index.js"></script>
+</body>
+</html>

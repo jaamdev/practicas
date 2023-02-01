@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #48e;
+  text-decoration: none;
+  transition: color 300ms;
+}
+a:hover {
+  color: #002c6d;
+}
+
+.contenedor {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nombre-pj {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.nombre-pj:hover {
+  color: #48e;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Navis Code</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <section class="registry-section">
+        <div class="video">
+            <a style="font-size: 50px;" href="https://youtu.be/OwdYwteGt2U">Ver Vídeo</a>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <h2>New User</h2>
+            </div>
+            <form id="user-form" class="form">
+                <div class="form-box">
+                    <label for="nickName">Name</label>
+                    <input type="text" name="nickName" id="nickName" placeholder="NavisCode">
+                    <small class="error-text">Introduce un nombre</small>
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="info@ejemplo.com">
+                    <small class="error-text">Introduce un email válido</small>
+                </div>
+                <div class="form-box">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" placeholder="Password">
+                    <small class="error-text">Introduce una contraseña de más de seis caracteres</small>
+                </div>
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#log-panel > h1{
+    display: block;
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+#log-panel{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 290px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #333;
+    text-align: center;
+}
+#login{
+    width: 100% auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #222;
+    box-shadow: 1px 1px 1px 3px #333 inset;
+}
+input[type="text"],input[type="password"],input[type="submit"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 30px;
+}
+a{
+    color: white;
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    border-top: 2px solid white;
+    transition: all 300ms;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: white;
+}
+a:focus{
+    color: green;
+}

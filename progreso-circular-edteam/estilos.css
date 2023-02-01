@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #111;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.circular-progress {
+  margin: auto;
+  position: relative;
+}
+.circular-progress, .circular-progress:before, .circular-progress:after {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+.circular-progress:before, .circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.circular-progress:before {
+  padding: 0.5em;
+  box-sizing: border-box;
+  font-size: 2rem;
+  line-height: 8rem;
+}
+.circular-progress:after {
+  line-height: 13rem;
+}
+
+.html {
+  transform: rotate(160.2deg);
+  background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
+}
+.html:before, .html:after {
+  color: orange;
+}
+.html:before {
+  content: "89%";
+  background: #111 content-box;
+  transform: rotate(-160.2deg);
+}
+.html:after {
+  content: "html5";
+  background: linear-gradient(transparent 50%, #111 50%);
+  transform: scale(1.1) rotate(-160.2deg);
+  text-transform: uppercase;
+}
+
+.css {
+  transform: rotate(156.6deg);
+  background: linear-gradient(0deg, #6666ff 50%, rgba(102, 102, 255, 0.2) 50%);
+}
+.css:before, .css:after {
+  color: #6666ff;
+}
+.css:before {
+  content: "87%";
+  background: #111 content-box;
+  transform: rotate(-156.6deg);
+}
+.css:after {
+  content: "css";
+  background: linear-gradient(transparent 50%, #111 50%);
+  transform: scale(1.1) rotate(-156.6deg);
+  text-transform: uppercase;
+}
+
+.javascript {
+  transform: rotate(144deg);
+  background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
+}
+.javascript:before, .javascript:after {
+  color: yellow;
+}
+.javascript:before {
+  content: "80%";
+  background: #111 content-box;
+  transform: rotate(-144deg);
+}
+.javascript:after {
+  content: "javascript";
+  background: linear-gradient(transparent 50%, #111 50%);
+  transform: scale(1.1) rotate(-144deg);
+  text-transform: uppercase;
+}
+
+.php {
+  transform: rotate(90deg);
+  background: linear-gradient(0deg, #e600e6 50%, rgba(230, 0, 230, 0.2) 50%);
+}
+.php:before, .php:after {
+  color: #e600e6;
+}
+.php:before {
+  content: "50%";
+  background: #111 content-box;
+  transform: rotate(-90deg);
+}
+.php:after {
+  content: "php";
+  background: linear-gradient(transparent 50%, #111 50%);
+  transform: scale(1.1) rotate(-90deg);
+  text-transform: uppercase;
+}
+
+.ruby {
+  transform: rotate(36deg);
+  background: linear-gradient(0deg, #00cd00 50%, rgba(0, 205, 0, 0.2) 50%);
+}
+.ruby:before, .ruby:after {
+  color: #00cd00;
+}
+.ruby:before {
+  content: "20%";
+  background: #111 content-box;
+  transform: rotate(-36deg);
+}
+.ruby:after {
+  content: "ruby";
+  background: linear-gradient(transparent 50%, #111 50%);
+  transform: scale(1.1) rotate(-36deg);
+  text-transform: uppercase;
+}
+
+.python {
+  transform: rotate(27deg);
+  background: linear-gradient(0deg, #ff6666 50%, rgba(255, 102, 102, 0.2) 50%);
+}
+.python:before, .python:after {
+  color: #ff6666;
+}
+.python:before {
+  content: "15%";
+  background: #111 content-box;
+  transform: rotate(-27deg);
+}
+.python:after {
+  content: "python";
+  background: linear-gradient(transparent 50%, #111 50%);
+  transform: scale(1.1) rotate(-27deg);
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=estilos.css.map */

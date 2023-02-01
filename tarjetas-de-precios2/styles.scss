@@ -1,0 +1,200 @@
+$background-gradient: linear-gradient(to left, #7275a4, #4a4872, #802d4a);
+$white: rgb(240, 240, 240);
+$white-grey: rgba(209, 209, 209, 0.7);
+$grey: rgb(160, 158, 158);
+$black: rgb(15, 15, 15);
+$blue-gradient: linear-gradient(135deg, #5464bf, #6a99ca, #6eb0be);
+$pink-gradient: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6);
+$orange-gradient: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+
+html, body
+{
+    height: 100%;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: $background-gradient;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pricing-table
+{
+    display: flex;
+    width: 800px;
+    height: 450px;
+    .individual, .shared, .unlimited
+    {
+        flex: 1;
+        height: 100%;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        border-radius: 12px;
+
+        h2
+        {
+            text-align: center;
+            position: relative;
+
+            &::after
+            {
+                width: 20px;
+                height: 3px;
+                background-color: $white;
+                content: "";
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .price
+        {
+            position: absolute;
+            color: rgba($white-grey, 0.12);
+            width: 100%;
+            font-size: 350px;
+            top: 30px;
+            text-align: center;
+            font-weight: 900;
+
+            span
+            {
+                font-size: 50px;
+                position: absolute;
+                top: 60px;
+                left: 10px;
+            }
+        }
+    }
+    .individual
+    {
+        background: $blue-gradient;
+    }
+    .shared
+    {
+        background: $pink-gradient;
+        transform: scale(1.15);
+        z-index: 10;
+        box-shadow: 0 0 24px 10px rgba($black, 0.4);
+        .continue
+        {
+            position: relative;
+            top: 45px;
+            z-index: 12;
+        }
+        .waves
+        {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            border-radius: 12px;
+            width: 100%;
+            height: 176px;
+            background-image: url(img/waves.png);
+            background-size: cover;
+        }
+    }
+    .unlimited
+    {
+        background: $orange-gradient;
+        .lines
+        {
+            position: absolute;
+            content: "";
+            top: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url(img/lines.png);
+            background-size: cover;
+        }
+    }
+    .feature
+    {
+        width: 80%;
+        margin: 0 auto;
+
+        h3
+        {
+            color: $white-grey;
+            font-weight: 400;
+            span
+            {
+                color: $white;
+                font-weight: 700;
+            }
+        }
+        .progress
+        {
+            background-color: rgba($black, 0.3);
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 8px 16px 6px rgba($black, 0.2);
+
+            &.office::after
+            {
+                border-radius: 15px;
+                position: absolute;
+                content: "";
+                background: $pink-gradient;
+                height: 100%;
+                width: 80%;
+            }
+            &.home::after
+            {
+                border-radius: 15px;
+                position: absolute;
+                content: "";
+                background: $orange-gradient;
+                height: 100%;
+                width: 50%;
+            }
+        }
+    }
+    .large-feature
+    {
+        text-align: center;
+        p
+        {
+            margin: 0;
+        }
+        h3
+        {
+            padding: 20px 0;
+            font-size: 40px;
+            font-weight: 500;
+        }
+    }
+    .continue
+    {
+        display: flex;
+        justify-content: center;
+        button
+        {
+            width: 80%;
+            padding: 15px;
+            border-radius: 25px;
+            border: none;
+            color: $grey;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 12px 3px rgba($black, 0.2);
+
+            img
+            {
+                height: 12px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
