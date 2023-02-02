@@ -29,4 +29,4 @@ const countdown = (deadline, elem, finalMessage) => {
     }, 1000);
 };
 
-countdown('Jan 1 2023 10:00:00 GMT+0200', 'clock', '¡Ya comenzó!');
+countdown('Dec 1 2023 10:00:00 GMT+0200', 'clock', '¡Ya comenzó!');
